@@ -46,7 +46,7 @@ rm /usr/local/bin/node # delete node if installed
 cd /usr/local/bin && ls -l | grep “../lib/node_modules/” | awk ‘{print $9}’| xargs rm #delete global alias
 
 echo "Installing NVM"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.0/install.sh | bash
 
 echo "Reload Profile"
 . ~/.zshrc
